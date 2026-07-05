@@ -1,0 +1,123 @@
+Netgen 1.5.318 compiled on Thu Apr 16 09:02:45 PM CEST 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file opamp_clean.spice for opamp_clean.spice opamp_clean
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Reading netlist file opamp_schematic.spice for opamp_schematic.spice opamp
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+
+Reading setup file /foss/pdks/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property mult found for device sky130_fd_pr__res_high_po_0p35
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file comp_opamp.out
+Logging to file "comp_opamp.out" enabled
+Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'opamp_clean'
+Circuit opamp_clean contains 74 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:  66
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'opamp'
+Circuit opamp contains 10 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   5
+Circuit contains 9 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'opamp_clean'
+Circuit opamp_clean contains 10 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   5
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'opamp'
+Circuit opamp contains 10 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   5
+Circuit contains 9 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "comp_opamp.out" disabled
+LVS Done.

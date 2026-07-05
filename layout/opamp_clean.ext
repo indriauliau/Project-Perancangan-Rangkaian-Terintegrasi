@@ -1,0 +1,972 @@
+timestamp 1781461631
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__nfet_01v8_BXQZZZ M0 1 0 -985 0 1 -1056
+use sky130_fd_pr__nfet_01v8_778P4L M1 1 0 1554 0 1 657
+use sky130_fd_pr__res_high_po_0p35_TD68X4 R1 1 0 -1747 0 1 666
+use sky130_fd_pr__nfet_01v8_BXQZZZ M5 1 0 4303 0 1 -1074
+use sky130_fd_pr__nfet_01v8_778P4L M2 1 0 7079 0 1 546
+use sky130_fd_pr__cap_mim_m3_1_T6P5U4 CC 1 0 12240 0 1 1032
+use sky130_fd_pr__nfet_01v8_BXQZZZ M7 1 0 11563 0 1 -946
+use sky130_fd_pr__pfet_01v8_ML7HSN M3 1 0 1541 0 1 2925
+use sky130_fd_pr__pfet_01v8_ML7HSN M4 1 0 7155 0 1 3083
+use sky130_fd_pr__pfet_01v8_ML7HSN M6 1 0 11451 0 1 3061
+port "VINN" 2 8700 3860 9100 3940 m3
+port "VINP" 1 3500 3460 3900 3540 m3
+port "VOUT" 3 12850 4260 13250 4340 m3
+port "VSS" 5 12850 -2900 13250 -2820 m3
+port "VDD" 4 12850 5560 13250 5640 m3
+node "net1" 148 11538 -1783 176 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33696 2232 736702 51402 447398 30884 118488 8238 0 0 0 0
+node "net4" 190 9576.46 174 631 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119808 7936 1041640 72036 278520 19356 57168 3858 0 0 0 0
+node "VINN" 104 8349.54 8700 3860 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112320 7440 127680 7920 315888 18104 1117936 76720 0 0 0 0
+node "VINP" 102 7848.23 3500 3460 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112320 7440 127680 7920 324288 18704 1082320 74176 0 0 0 0
+node "VOUT" 29 3926.88 12850 4260 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14976 992 17024 1056 122936 6700 391164 26796 0 0 0 0
+node "net3" 170 8254.93 5603 520 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74880 4960 945568 65984 225976 15532 73152 5206 0 0 0 0
+node "net2" 169 9299.79 78 631 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82368 5456 805080 55950 274736 18752 377424 26508 0 0 0 0
+node "VSS" 363 14340.1 12850 -2900 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29400 1680 57480 2856 125292 8542 535904 34912 619960 42084 0 0 0 0
+node "VDD" 226 14118.9 12850 5560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14700 840 38100 2048 333372 23390 507472 33576 339656 23508 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "net3" "net1" 862.422
+cap "VINN" "VINP" 0.0628574
+cap "VINP" "VSS" 131.049
+cap "VINP" "net4" 2142.21
+cap "VINN" "VDD" 100.45
+cap "VDD" "VSS" 0.147766
+cap "net2" "VINP" 3540.9
+cap "net2" "VDD" 1219.67
+cap "VINP" "net1" 821.734
+cap "VDD" "net1" 109.08
+cap "VSS" "VOUT" 523.179
+cap "VDD" "net3" 318.671
+cap "VOUT" "net1" 143.835
+cap "VINN" "VSS" 130.98
+cap "VINN" "net4" 2247.31
+cap "VOUT" "net3" 858.695
+cap "VSS" "net4" 891.99
+cap "VINP" "VDD" 120.462
+cap "net2" "VINN" 1043.65
+cap "net2" "VSS" 83.9067
+cap "net2" "net4" 2103.13
+cap "VINN" "net1" 546.748
+cap "VSS" "net1" 1518.13
+cap "net4" "net1" 275.761
+cap "net2" "net1" 2059.35
+cap "VINN" "net3" 2323.39
+cap "VSS" "net3" 83.8867
+cap "net4" "net3" 2104
+cap "VDD" "VOUT" 1311.62
+cap "net2" "net3" 634.743
+cap "M0/G0" "M0/B" 0.479547
+cap "M0/B" "M0/G1" 1.25061
+cap "M0/G0" "M0/D0" 0.289267
+cap "M0/B" "M0/D0" 1.23554
+cap "M0/B" "M0/G0" 1.48387
+cap "M5/G0" "M5/D0" 0.289267
+cap "M1/B" "M5/G1" 1.29277
+cap "M1/B" "M5/D0" 0.6923
+cap "M1/B" "M5/G0" 2.00555
+cap "M5/D0" "M5/B" 0.590562
+cap "M7/B" "M7/G0" 1.49761
+cap "M7/G1" "M7/B" 1.19975
+cap "M7/D0" "M7/B" 1.20269
+cap "M7/G0" "M7/D0" 0.289267
+cap "M7/G0" "M7/B" 0.416425
+cap "M0/B" "M0/G0" 13.3089
+cap "M0/B" "M0/D0" 1.18744
+cap "M0/G1" "M0/G0" 1.48628
+cap "M0/B" "M0/G1" 0.497365
+cap "M0/D0" "M0/G0" 3.16019
+cap "M0/B" "M1/G0" 3.89616
+cap "M0/D0" "M0/B" -0.694216
+cap "M1/D0" "M1/G0" 2.33378
+cap "M0/G0" "M0/G1" 1.15882
+cap "M0/B" "net4" 2.82875
+cap "net4" "M1/D0" 1.02598
+cap "M0/B" "M0/G1" 29.1439
+cap "M0/B" "M0/G0" 26.0416
+cap "M0/D0" "M0/G1" 10.3984
+cap "M0/D0" "M0/G0" 10.5717
+cap "M1/G0" "M1/S1" 0.155555
+cap "M1/G0" "M1/D14" 2.394
+cap "M1/G11" "net4" 3.4101
+cap "M1/D10" "net4" 1.06983
+cap "M1/S1" "M1/D14" 1.38738
+cap "M1/S1" "M1/G0" 13.6958
+cap "M1/D10" "M1/G0" 2.394
+cap "M1/G11" "M1/G0" 2.41991
+cap "M1/S1" "M1/D10" 1.38738
+cap "M1/S1" "M1/G11" 2.6331
+cap "net4" "M1/D12" 1.06983
+cap "M1/G0" "M1/D12" 2.394
+cap "M1/S1" "M1/D12" 1.38738
+cap "net4" "M1/D2" 1.06983
+cap "net4" "M1/G15" 1.51233
+cap "M1/G0" "M1/D2" 2.394
+cap "M1/D4" "net4" 1.06983
+cap "M1/S1" "M1/D2" 1.38738
+cap "M1/G0" "M1/G15" 1.07334
+cap "M1/G13" "net4" 3.4101
+cap "M1/S1" "M1/D4" 1.38738
+cap "M1/S1" "M1/G15" 1.16832
+cap "M1/D4" "M1/G0" 2.394
+cap "M1/S1" "M1/G13" 2.6331
+cap "M1/G13" "M1/G0" 2.41991
+cap "net4" "M1/G7" 3.4101
+cap "M0/B" "net4" 4.99309
+cap "M1/S1" "M1/G7" 2.6331
+cap "M1/G0" "M1/G7" 2.41991
+cap "M1/S1" "M0/B" 12.7659
+cap "M0/B" "M1/G0" 4.36679
+cap "M1/D6" "net4" 1.06983
+cap "net4" "M1/G5" 3.4101
+cap "M1/G3" "net4" 3.4101
+cap "M1/G3" "M1/G0" 2.41991
+cap "M1/D6" "M1/G0" 2.394
+cap "M1/G1" "net4" 3.4101
+cap "M1/S1" "M1/G3" 2.6331
+cap "M1/S1" "M1/G5" 2.6331
+cap "M1/S1" "M1/D6" 1.38738
+cap "M1/G0" "M1/G5" 2.41991
+cap "M1/S1" "M1/G1" 2.6331
+cap "M1/G1" "M1/G0" 2.41991
+cap "net4" "M1/G9" 3.4101
+cap "net4" "M1/D8" 1.06983
+cap "M1/S1" "M1/G9" 2.6331
+cap "M1/G0" "M1/G9" 2.41991
+cap "net4" "M1/D14" 1.06983
+cap "M1/S1" "M1/D8" 1.38738
+cap "M1/G0" "M1/D8" 2.394
+cap "M1/S1" "net4" 5.91672
+cap "M1/G15" "M1/G0" 1.34657
+cap "M1/G19" "M1/S1" 6.0432
+cap "M1/D26" "M1/G0" 2.394
+cap "M1/D16" "M1/S1" 2.45721
+cap "M1/D24" "M1/S1" 2.45721
+cap "M1/G27" "M1/S1" 6.0432
+cap "M1/D20" "M1/G0" 2.394
+cap "M1/G17" "M1/S1" 6.0432
+cap "M1/B" "M1/S1" 18.1202
+cap "M1/D18" "M1/S1" 2.45721
+cap "M1/G19" "M1/G0" 2.41991
+cap "M1/G23" "M1/S1" 6.0432
+cap "M1/S1" "M1/G0" 10.4361
+cap "M1/D28" "M1/S1" 2.45721
+cap "M1/D16" "M1/G0" 2.394
+cap "M1/G27" "M1/G0" 2.41991
+cap "M1/D24" "M1/G0" 2.394
+cap "M1/G25" "M1/S1" 6.0432
+cap "M1/D22" "M1/S1" 2.45721
+cap "M1/G17" "M1/G0" 2.41991
+cap "M1/G21" "M1/S1" 6.0432
+cap "M1/D18" "M1/G0" 2.394
+cap "M1/B" "M1/G0" 3.99402
+cap "M1/G23" "M1/G0" 2.41991
+cap "M1/G15" "M1/S1" 3.36255
+cap "M1/D28" "M1/G0" 2.394
+cap "M1/G29" "M1/S1" 6.0432
+cap "M1/G25" "M1/G0" 2.41991
+cap "M1/D26" "M1/S1" 2.45721
+cap "M1/D22" "M1/G0" 2.394
+cap "M1/G21" "M1/G0" 2.41991
+cap "M1/S1" "M1/D30" 2.14003
+cap "M1/D20" "M1/S1" 2.45721
+cap "M1/S15" "M5/G0" 16.5585
+cap "M1/D30" "M1/S15" 1.46562
+cap "M5/G0" "M5/G1" 2.6451
+cap "M1/B" "M1/S15" 7.13698
+cap "M1/B" "M5/G1" 28.2483
+cap "M1/S15" "M5/G1" 13.2114
+cap "M1/B" "M5/G0" 39.56
+cap "M2/G1" "M1/S29" 4.09922
+cap "M1/S29" "M1/B" 23.9218
+cap "M2/D0" "M2/G0" 2.33378
+cap "M2/S1" "M1/S29" 0.971241
+cap "M5/G1" "M1/B" 1.6425
+cap "M2/G1" "M2/G0" 2.35486
+cap "M1/B" "M2/G0" 6.57819
+cap "M2/G1" "M2/S1" 2.56191
+cap "M2/S1" "M1/B" 7.9566
+cap "M2/D0" "M1/S29" 1.30054
+cap "M2/S1" "M2/G0" 1.70762
+cap "M5/G0" "M1/B" 0.400627
+cap "M2/G0" "M2/G7" 2.41991
+cap "M2/G0" "M2/G15" 2.41991
+cap "net4" "M2/D4" 1.35489
+cap "M2/G0" "M2/D10" 2.394
+cap "net4" "M2/G3" 4.21248
+cap "M2/G7" "M2/S1" 2.6331
+cap "M2/S1" "M2/G15" 2.6331
+cap "M2/G0" "M2/D4" 2.394
+cap "M2/G0" "M2/G3" 2.41991
+cap "M2/S1" "M2/D10" 1.38738
+cap "M2/D4" "M2/S1" 1.38738
+cap "M2/G3" "M2/S1" 2.6331
+cap "net4" "M2/G11" 4.21248
+cap "net4" "M2/G5" 4.21248
+cap "net4" "M5/B" 8.40055
+cap "M2/G0" "M2/G5" 2.41991
+cap "M2/G0" "M5/B" 17.0877
+cap "M2/G0" "M2/G11" 2.41991
+cap "M2/G5" "M2/S1" 2.6331
+cap "M5/B" "M2/S1" 65.1036
+cap "M2/S1" "M2/G11" 2.6331
+cap "net4" "M2/G9" 4.21248
+cap "net4" "M2/S1" 6.79869
+cap "M2/D6" "net4" 1.35489
+cap "M2/G0" "M2/G9" 2.41991
+cap "net4" "M2/D8" 1.35489
+cap "M2/G0" "M2/S1" 12.1573
+cap "M2/G0" "M2/D6" 2.394
+cap "M2/D2" "net4" 1.35489
+cap "M2/G9" "M2/S1" 2.6331
+cap "M2/G0" "M2/D2" 2.394
+cap "M2/G0" "M2/D8" 2.394
+cap "net4" "M2/G13" 4.21248
+cap "M2/D6" "M2/S1" 1.38738
+cap "net4" "M2/G1" 0.113262
+cap "M2/D2" "M2/S1" 1.38738
+cap "M2/D8" "M2/S1" 1.38738
+cap "M2/G0" "M2/G1" 0.0650441
+cap "M2/G0" "M2/G13" 2.41991
+cap "net4" "M2/D14" 1.35489
+cap "M2/G1" "M2/S1" 0.0711898
+cap "M2/G13" "M2/S1" 2.6331
+cap "M2/G0" "M2/D14" 2.394
+cap "net4" "M2/D12" 1.35489
+cap "M2/S1" "M2/D14" 1.38738
+cap "M2/G0" "M2/D12" 2.394
+cap "net4" "M2/D16" 1.35489
+cap "M2/D12" "M2/S1" 1.38738
+cap "M2/G0" "M2/D16" 2.394
+cap "M2/S1" "M2/D16" 1.38738
+cap "net4" "M2/G7" 4.21248
+cap "net4" "M2/G15" 4.21248
+cap "net4" "M2/D10" 1.35489
+cap "M2/G0" "M2/D22" 2.394
+cap "M2/G0" "M2/G17" 2.41991
+cap "M2/D26" "M2/S1" 2.74227
+cap "M2/S1" "M2/B" 74.04
+cap "M2/G23" "M2/S1" 6.84558
+cap "M2/G0" "M2/D18" 2.394
+cap "M2/S1" "M2/G21" 6.84558
+cap "M2/G0" "M2/S1" 10.4225
+cap "M2/D30" "M2/S1" 4.09059
+cap "M2/S1" "M2/G25" 6.84558
+cap "M2/S1" "M2/D20" 2.74227
+cap "M2/D28" "M2/S1" 2.74227
+cap "M2/G0" "M2/D26" 2.394
+cap "M2/G0" "M2/B" 16.3305
+cap "M2/G23" "M2/G0" 2.41991
+cap "M2/S1" "M2/G19" 6.84558
+cap "M2/S1" "M2/G27" 6.84558
+cap "M2/G0" "M2/G21" 2.41991
+cap "M2/D24" "M2/S1" 2.74227
+cap "M2/G0" "M2/G25" 2.41991
+cap "M2/G0" "M2/D20" 2.394
+cap "M2/D28" "M2/G0" 2.394
+cap "M2/D22" "M2/S1" 2.74227
+cap "M2/G0" "M2/G27" 2.41991
+cap "M2/G0" "M2/G19" 2.41991
+cap "M2/G29" "M2/S1" 6.84558
+cap "M2/G0" "M2/D24" 2.394
+cap "M2/S1" "M2/G17" 6.84558
+cap "M2/D18" "M2/S1" 2.74227
+cap "M2/S15" "M2/B" 5.50921
+cap "M2/B" "M7/G1" 0.581264
+cap "M7/D0" "M2/B" 4.29202
+cap "M7/G0" "M2/B" 14.0488
+cap "M7/G0" "M7/G1" 1.48628
+cap "M7/D0" "M7/G0" 3.16019
+cap "M7/D0" "M7/B" -4.2505
+cap "M7/D0" "M7/G1" 10.0019
+cap "M7/G1" "M7/B" 26.419
+cap "M7/D0" "M7/G0" 10.5717
+cap "M7/G0" "M7/B" 25.0395
+cap "M7/G1" "M7/G0" 0.249161
+cap "CC/C2" "M7/B" 0.146608
+cap "R1/R1" "M1/G0" 0.190364
+cap "M0/B" "R1/R1" 23.9627
+cap "M0/D0" "R1/R1" 14.7487
+cap "M0/B" "M1/G0" 0.504501
+cap "M0/D0" "M1/G0" 0.57912
+cap "M0/D0" "M0/B" 78.2588
+cap "M0/D0" "M1/S1" 0.106689
+cap "M0/D0" "M1/D0" 0.431626
+cap "M1/S1" "M1/G0" 29.8709
+cap "M0/D0" "M1/G0" 0.0630526
+cap "M1/D0" "M1/G1" 5.0967
+cap "M0/D0" "M1/S1" 0.00835851
+cap "M1/G0" "M0/B" 17.4442
+cap "M1/S1" "M0/B" 11.3056
+cap "M0/D0" "M0/B" 1.19522
+cap "M1/G0" "M1/G1" 10.0339
+cap "M1/D0" "net4" 0.0216218
+cap "M1/S1" "M1/G1" 0.0067237
+cap "M0/B" "M1/G1" 0.955562
+cap "net4" "M1/G0" 0.0402575
+cap "net4" "M1/S1" 0.00123553
+cap "net4" "M0/B" 0.245608
+cap "M1/D0" "M1/G0" 35.0092
+cap "M1/D0" "M0/D0" 0.675476
+cap "M1/D0" "M1/S1" 38.2923
+cap "M1/D0" "M0/B" 15.7225
+cap "M1/G0" "M3/G0" 0.200373
+cap "M1/G0" "M1/S1" 166.031
+cap "M0/D0" "M1/D0" -0.0395672
+cap "net4" "M0/B" 1.58457
+cap "net4" "M1/D0" 0.151352
+cap "M1/S1" "M3/B" 0.299602
+cap "M1/G1" "M1/S1" 185.429
+cap "M1/G0" "M0/B" 45.084
+cap "M1/G0" "M1/D0" 166.6
+cap "M1/S1" "M3/G0" 0.00268425
+cap "M1/G1" "M3/S1" 0.00934739
+cap "M1/G1" "M0/B" 34.8828
+cap "M1/D0" "M3/B" 0.163224
+cap "M1/G1" "M1/D0" 161.23
+cap "M1/G0" "M0/D0" 0.142371
+cap "M3/S1" "M1/S1" 0.450436
+cap "M1/S1" "M1/D0" 557.337
+cap "M0/B" "M1/S1" 71.8879
+cap "net4" "M1/G0" 0.281802
+cap "M3/G0" "M1/D0" 0.349213
+cap "M1/G1" "M0/D0" 0.328629
+cap "net4" "M1/G1" 0.148082
+cap "M3/G1" "M1/G1" 0.215591
+cap "M0/B" "M1/D0" 10.3933
+cap "M1/G1" "M1/G0" 3.36509
+cap "M1/S1" "M0/D0" 0.171671
+cap "M1/G0" "M3/B" 0.137993
+cap "net4" "M1/S1" 0.171739
+cap "M1/G1" "M3/B" 1.04796
+cap "M1/G1" "M1/B" 35.216
+cap "M3/D0" "M1/D0" 0.465442
+cap "M1/G0" "M3/D0" 0.0785062
+cap "M1/S1" "M1/B" 75.9486
+cap "M1/S1" "M1/G1" 166.882
+cap "M1/G1" "M5/G1" 0.408132
+cap "M1/G1" "M3/B" 0.790855
+cap "M1/S1" "M5/G1" 0.157526
+cap "M1/B" "M1/D0" 11.36
+cap "M1/B" "M1/G0" 45.9587
+cap "M1/S1" "M3/B" 0.114073
+cap "M1/G1" "M1/D0" 177.76
+cap "M1/G1" "M1/G0" 3.14349
+cap "M1/S1" "M1/D0" 557.303
+cap "M1/S1" "M1/G0" 155.993
+cap "M5/G1" "M1/D0" -0.0474866
+cap "M5/G1" "M1/G0" 0.1877
+cap "M3/B" "M1/D0" 0.154199
+cap "M1/G0" "M3/B" 0.0832212
+cap "M1/G0" "M1/D0" 171.556
+cap "M1/G1" "M3/D0" 0.565941
+cap "M1/G1" "M3/G1" 0.0520391
+cap "M1/S1" "M3/D0" 0.121334
+cap "net2" "M1/D14" 0.00841907
+cap "M1/S15" "M1/B" 8.16787
+cap "M5/G1" "M1/B" 6.45834
+cap "M5/G1" "M1/D14" 2.17134
+cap "M1/S15" "M1/D14" 0.03639
+cap "M5/G1" "M1/G13" 1.11511
+cap "M1/G14" "M1/B" 14.1034
+cap "M1/D14" "M1/B" 44.3791
+cap "M1/G13" "M1/B" 15.9348
+cap "M1/S15" "M5/G1" 0.298333
+cap "net2" "M1/B" -0.00258951
+cap "M1/S29" "M2/D0" 0.0300875
+cap "M2/D0" "M5/G1" 0.00204679
+cap "M2/D0" "M2/G1" 8.32641
+cap "M2/S1" "M2/G0" 32.5445
+cap "net2" "M2/S1" 0.0145487
+cap "M2/D0" "M2/G0" 31.7095
+cap "net2" "M2/D0" 0.0191212
+cap "M5/G1" "M1/B" 0.400771
+cap "M2/G1" "M1/B" 8.30758
+cap "M2/G0" "M1/B" 14.8952
+cap "net2" "M1/B" 0.135064
+cap "M2/D0" "M2/S1" 57.4906
+cap "M1/S29" "M2/G1" 0.0230949
+cap "M5/G1" "M2/G1" 0.0129271
+cap "M1/S29" "M2/G0" 0.0480998
+cap "M5/G1" "M2/G0" 0.00845221
+cap "M2/G0" "M2/G1" 7.92717
+cap "M2/S1" "M1/B" 9.66679
+cap "net2" "M2/G1" 0.0145793
+cap "M2/D0" "M1/B" 23.6257
+cap "net2" "M2/G0" 0.00967516
+cap "M1/S29" "M2/S1" 0.0300875
+cap "M2/S1" "M5/G1" 0.00155734
+cap "M2/S1" "M2/G1" 18.7588
+cap "net1" "M2/S1" 0.0109014
+cap "M5/B" "M2/G0" 33.3856
+cap "net2" "M2/D0" 0.11639
+cap "M2/G1" "net4" 0.166943
+cap "M2/D0" "M2/S1" 576.402
+cap "net2" "M2/G0" 0.0677262
+cap "M2/D0" "net1" 0.0124587
+cap "M2/G0" "M2/S1" 161.153
+cap "M2/G0" "net1" 0.0591655
+cap "M2/G0" "M4/B" 0.0018677
+cap "M2/D0" "M2/G0" 184.665
+cap "net4" "M2/S1" 0.210613
+cap "M2/G1" "M5/B" 48.9344
+cap "M2/D0" "net4" 0.2407
+cap "M2/G1" "net2" 0.139378
+cap "M5/B" "net2" 0.647566
+cap "M2/G0" "net4" 0.343986
+cap "M2/G1" "M2/S1" 166.706
+cap "M2/G1" "net1" 0.123583
+cap "M5/B" "M2/S1" 14.3612
+cap "M2/G1" "M4/B" 0.289788
+cap "M5/B" "net1" 0.617372
+cap "M5/B" "M4/B" 2.53741
+cap "M2/G1" "M2/D0" 180.149
+cap "net2" "M2/S1" 0.101841
+cap "M5/B" "M2/D0" 78.9706
+cap "M2/G1" "M2/G0" 3.36214
+cap "M2/B" "M4/B" 1.72513
+cap "net1" "M2/B" 0.656486
+cap "M2/G0" "M4/B" 0.00295719
+cap "net1" "M2/G0" 0.0591655
+cap "M4/B" "M2/G1" 0.150443
+cap "net1" "M2/D0" 0.0207828
+cap "net1" "M2/G1" 0.119446
+cap "M2/G0" "M2/B" 34.7767
+cap "M2/B" "M2/D0" 97.8669
+cap "M2/B" "M2/G1" 51.9327
+cap "M2/B" "net3" 0.422307
+cap "M2/B" "net2" 0.185019
+cap "M2/G0" "M2/D0" 153.406
+cap "M2/G0" "M2/G1" 2.92604
+cap "M2/G0" "net3" 0.0116475
+cap "M2/G0" "net2" 0.0223066
+cap "M2/G1" "M2/D0" 155.212
+cap "net1" "M2/S1" 0.0109014
+cap "M2/G1" "net3" 0.0770021
+cap "net2" "M2/D0" 0.0290975
+cap "net2" "M2/G1" 0.0384894
+cap "M2/B" "M2/S1" 18.2615
+cap "M2/G0" "M2/S1" 155.696
+cap "M2/S1" "M2/D0" 519.003
+cap "M2/G1" "M2/S1" 166.869
+cap "M2/S1" "net3" 0.0159262
+cap "net2" "M2/S1" 0.0290975
+cap "M2/G14" "M2/B" 10.6159
+cap "M2/B" "M2/D16" 14.1017
+cap "M2/B" "M6/G0" 0.0133478
+cap "M2/B" "M7/G1" 0.0301986
+cap "M2/B" "M2/S15" 10.9489
+cap "M2/B" "M2/G15" 12.0877
+cap "M7/G1" "CC/C2" 11.5418
+cap "M7/D0" "CC/C2" 10.8202
+cap "M7/G1" "M2/B" 1.49761
+cap "M7/G1" "CC/C1" -0.273501
+cap "CC/C1" "M7/D0" 25.0227
+cap "M7/G1" "CC/C2" 2.19774
+cap "M7/G0" "M7/G1" 0.909656
+cap "M7/D0" "CC/C2" 2.66341
+cap "M7/D0" "M7/G1" 0.396541
+cap "CC/C1" "M6/G0" 1.34033
+cap "CC/C1" "CC/C2" -18.6685
+cap "CC/C1" "M7/G1" 0.733061
+cap "M7/B" "CC/C2" 0.350819
+cap "CC/C1" "M7/D0" 25.0227
+cap "M7/B" "M7/G1" 1.09229
+cap "R1/B" "R1/R2" 4.9598
+cap "R1/R1" "R1/R2" 1.39178
+cap "M1/B" "M1/D0" 9.3716
+cap "M1/S1" "R1/R2" 0.705014
+cap "M1/S1" "M1/D0" 0.267629
+cap "M1/G0" "M1/G1" 0.667334
+cap "M1/D0" "M1/G1" 0.511293
+cap "M1/G0" "R1/R2" 3.50445
+cap "M1/B" "M1/G1" 2.04427
+cap "M1/G0" "M1/D0" 1.03122
+cap "R1/R2" "M1/D0" 1.3912
+cap "M1/S1" "M1/G1" 0.328574
+cap "R1/R2" "M1/B" 3.05824
+cap "M3/B" "M1/G1" 0.109103
+cap "M1/D0" "M1/G10" 1.03122
+cap "M3/B" "M1/B" 6.40127
+cap "M1/D0" "net1" 5.40829
+cap "M3/S1" "M1/G1" 1.28137
+cap "M1/G2" "net1" 3.50445
+cap "M1/G10" "M1/G1" 0.667334
+cap "M1/G2" "M1/D0" 1.03122
+cap "M1/G8" "net1" 3.50445
+cap "M1/G8" "M1/D0" 1.03122
+cap "M3/S1" "M3/B" 0.112913
+cap "M1/G4" "net1" 3.50445
+cap "M1/G4" "M1/D0" 1.03122
+cap "M1/D0" "M1/G1" 4.63658
+cap "M1/G14" "net1" 3.50445
+cap "M1/D0" "M1/G14" 1.30504
+cap "M1/G2" "M1/G1" 0.667334
+cap "M1/G12" "net1" 3.50445
+cap "M1/D0" "M1/G12" 1.03122
+cap "M3/B" "net1" 0.28735
+cap "M1/D0" "M3/B" 86.6996
+cap "M1/G6" "net1" 3.50445
+cap "M1/D0" "M1/G6" 1.03122
+cap "M1/G8" "M1/G1" 0.667334
+cap "M1/B" "net1" 6.65521
+cap "M1/D0" "M1/B" 62.5331
+cap "M1/G4" "M1/G1" 0.667334
+cap "M1/S1" "net1" 8.10881
+cap "M1/D0" "M1/S1" 3.58575
+cap "M1/G14" "M1/G1" 0.667334
+cap "M1/G12" "M1/G1" 0.667334
+cap "M3/B" "M1/G1" 14.5206
+cap "M1/G6" "M1/G1" 0.667334
+cap "M1/B" "M1/G1" 19.6385
+cap "M1/D0" "M3/S1" 6.45517
+cap "M1/S1" "M1/G1" 5.5149
+cap "M1/G10" "net1" 3.50445
+cap "M1/G1" "M1/G24" 0.667334
+cap "M1/B" "M3/B" 4.00915
+cap "net1" "M1/G16" 3.50445
+cap "M1/G26" "net1" 3.50445
+cap "net1" "M1/G18" 3.50445
+cap "net1" "M1/D0" 5.46018
+cap "M1/D0" "M3/D0" 0.133683
+cap "M1/G1" "M3/G0" 0.384483
+cap "net1" "M1/G20" 3.50445
+cap "M1/G1" "M1/G16" 0.667334
+cap "M1/G26" "M1/G1" 0.667334
+cap "M1/G28" "M1/D0" 1.03122
+cap "M1/G1" "M1/D0" 2.03652
+cap "M1/G1" "M1/G18" 0.667334
+cap "M1/G1" "M1/G20" 0.667334
+cap "M1/G24" "M1/D0" 1.03122
+cap "net1" "M3/B" 0.168793
+cap "M1/D0" "M3/G0" 0.00431435
+cap "M1/B" "net1" 6.54589
+cap "M1/B" "M3/D0" 0.862636
+cap "M3/B" "M3/D0" 35.0926
+cap "net1" "M1/G22" 3.50445
+cap "M1/G16" "M1/D0" 1.03122
+cap "M1/G26" "M1/D0" 1.03122
+cap "M1/G18" "M1/D0" 1.03122
+cap "M1/B" "M1/G1" 19.2555
+cap "M1/G1" "M3/B" 9.38816
+cap "M1/G1" "M1/G22" 0.667334
+cap "net1" "M1/S1" 7.7121
+cap "M1/G20" "M1/D0" 1.03122
+cap "M3/B" "M3/G0" 0.7031
+cap "M1/B" "M3/G0" 0.00104841
+cap "M1/G1" "M1/S1" 5.11304
+cap "M1/B" "M1/D0" 66.2369
+cap "M1/D0" "M3/B" 6.96385
+cap "M1/G22" "M1/D0" 1.03122
+cap "net1" "M1/G28" 3.50445
+cap "M1/G1" "M3/D0" 1.58638
+cap "net1" "M1/G24" 3.50445
+cap "M1/D0" "M1/S1" 3.36283
+cap "M1/G1" "M1/G28" 0.667334
+cap "net1" "M3/G0" 0.00347565
+cap "M3/D0" "M3/G0" 0.959879
+cap "net1" "M1/B" 2.46983
+cap "M1/B" "net2" 0.0690557
+cap "net1" "M1/D14" 0.624928
+cap "M1/B" "M1/D14" 2.7827
+cap "M2/S1" "M2/D0" 0.480404
+cap "net1" "M2/S1" 0.874447
+cap "M2/G1" "M2/S1" 0.730434
+cap "M2/G0" "M2/D0" 1.03122
+cap "M2/G0" "net1" 2.80543
+cap "net1" "M2/D0" 1.0477
+cap "M2/G0" "M2/G1" 0.667334
+cap "M2/G1" "M2/D0" 0.51623
+cap "M1/B" "M2/D0" 1.70769
+cap "M4/B" "M2/D0" 0.0165212
+cap "net1" "M1/B" 2.48719
+cap "M1/B" "M2/G1" 1.32125
+cap "M2/G1" "M2/S15" 0.730434
+cap "net1" "M2/S11" 0.874447
+cap "M2/D0" "M2/G8" 1.03122
+cap "net1" "M2/S15" 0.874447
+cap "M2/D0" "M2/G1" 2.96497
+cap "M2/D0" "M2/G12" 1.03122
+cap "M2/G6" "M2/D0" 1.03122
+cap "M2/D0" "M2/G4" 1.03122
+cap "net1" "M2/D0" 4.39328
+cap "M2/B" "M2/D0" 3.02612
+cap "M2/D0" "M2/S9" 0.480404
+cap "M2/D0" "M4/S1" 0.706444
+cap "M2/S13" "M2/D0" 0.480404
+cap "M2/G8" "M2/G1" 0.667334
+cap "M2/G1" "M2/G12" 0.667334
+cap "M2/G6" "M2/G1" 0.667334
+cap "M2/G4" "M2/G1" 0.667334
+cap "net1" "M2/G8" 2.80543
+cap "M2/B" "M2/G1" 2.01277
+cap "net1" "M2/G6" 2.80543
+cap "M2/D0" "M2/S5" 0.480404
+cap "M2/S9" "M2/G1" 0.730434
+cap "M4/S1" "M2/G1" 0.892123
+cap "net1" "M2/G12" 2.80543
+cap "net1" "M2/G4" 2.80543
+cap "M2/S13" "M2/G1" 0.730434
+cap "M2/B" "net1" 4.09842
+cap "M2/D0" "M2/S3" 0.480404
+cap "net1" "M2/S13" 0.874447
+cap "net1" "M2/S9" 0.874447
+cap "M2/D0" "M2/S7" 0.480404
+cap "M2/D0" "M2/G14" 1.03122
+cap "M4/B" "M4/G0" 0.612038
+cap "M2/G1" "M2/S5" 0.730434
+cap "M2/D0" "M2/G10" 1.03122
+cap "M2/D0" "M2/G2" 1.03122
+cap "M2/S3" "M2/G1" 0.730434
+cap "net1" "M2/S5" 0.874447
+cap "M2/D0" "M2/S11" 0.480404
+cap "M2/D0" "M4/G0" 0.713571
+cap "M4/B" "M2/D0" 18.2869
+cap "M2/G14" "M2/G1" 0.667334
+cap "M2/G1" "M2/S7" 0.730434
+cap "net1" "M2/S3" 0.874447
+cap "M2/D0" "M2/S15" 0.480404
+cap "net1" "M2/G14" 2.80543
+cap "net1" "M2/S7" 0.874447
+cap "M2/G10" "M2/G1" 0.667334
+cap "M2/G1" "M2/G2" 0.667334
+cap "M2/S11" "M2/G1" 0.730434
+cap "net1" "M2/G10" 2.80543
+cap "M4/G0" "M2/G1" 0.470815
+cap "M4/B" "M2/G1" 9.61871
+cap "net1" "M2/G2" 2.80543
+cap "M2/G20" "M2/G1" 0.667334
+cap "M2/D0" "M2/G18" 1.03122
+cap "M4/D0" "M4/B" 5.70683
+cap "M2/G24" "M2/D0" 1.03122
+cap "M2/G26" "M2/G1" 0.667334
+cap "net1" "M2/S27" 0.874447
+cap "M2/D0" "M2/S25" 0.480404
+cap "M2/S17" "M2/G1" 0.730434
+cap "M2/G22" "M2/D0" 1.03122
+cap "M2/G16" "M2/D0" 1.03122
+cap "M2/D0" "M2/S23" 0.480404
+cap "M2/S19" "M2/D0" 0.480404
+cap "M2/D0" "M4/B" 3.99399
+cap "M2/G24" "net1" 2.80543
+cap "net1" "M2/G18" 2.80543
+cap "M2/G28" "M2/D0" 1.03122
+cap "M2/D0" "M2/B" 2.92576
+cap "M2/G1" "M2/S27" 0.730434
+cap "M4/D0" "M4/G0" 0.974439
+cap "net1" "M2/S25" 0.874447
+cap "M2/S29" "M2/D0" 0.480404
+cap "M2/D0" "net1" 4.14339
+cap "M4/D0" "M2/G1" 1.11895
+cap "M2/G22" "net1" 2.80543
+cap "M2/G16" "net1" 2.80543
+cap "net2" "M4/B" 0.56245
+cap "M2/D0" "M2/S21" 0.480404
+cap "M2/G24" "M2/G1" 0.667334
+cap "M2/G1" "M2/G18" 0.667334
+cap "net1" "M2/S23" 0.874447
+cap "M2/S19" "net1" 0.874447
+cap "M2/G28" "net1" 2.80543
+cap "net1" "M2/B" 4.196
+cap "M2/D0" "M2/G1" 1.83754
+cap "M2/G1" "M2/S25" 0.730434
+cap "M2/G16" "M2/G1" 0.667334
+cap "M2/S29" "net1" 0.874447
+cap "M2/G22" "M2/G1" 0.667334
+cap "M2/S19" "M2/G1" 0.730434
+cap "M2/G1" "M4/B" 7.0332
+cap "M2/G1" "M2/S23" 0.730434
+cap "net1" "M2/S21" 0.874447
+cap "M2/G20" "M2/D0" 1.03122
+cap "M2/G28" "M2/G1" 0.667334
+cap "M2/G1" "M2/B" 1.89159
+cap "M2/S29" "M2/G1" 0.730434
+cap "M2/G26" "M2/D0" 1.03122
+cap "M2/S17" "M2/D0" 0.480404
+cap "M2/G1" "M2/S21" 0.730434
+cap "M2/G1" "M4/G0" 0.66817
+cap "M2/G20" "net1" 2.80543
+cap "M2/G26" "net1" 2.80543
+cap "M2/D0" "M2/S27" 0.480404
+cap "M4/D0" "M2/D0" 0.0827473
+cap "M2/S17" "net1" 0.874447
+cap "net1" "M2/B" 1.42494
+cap "M6/D0" "CC/C2" 1.49712
+cap "M6/B" "CC/C1" 21.8057
+cap "CC/C1" "M6/D0" 0.790085
+cap "M6/B" "net1" 0.930738
+cap "net1" "CC/C2" 1.01171
+cap "CC/C1" "net1" -0.0530673
+cap "M6/B" "M6/D0" 9.1443
+cap "CC/C2" "M6/D0" 0.134545
+cap "CC/C1" "M6/D0" 1.96213
+cap "M6/B" "M6/D0" 5.28743
+cap "CC/C2" "net1" 61.1809
+cap "CC/C2" "CC/C1" 63.9902
+cap "CC/C1" "net1" -0.307114
+cap "CC/C2" "M6/B" 0.00354774
+cap "M6/B" "net1" 1.35315
+cap "CC/C1" "M6/B" 13.2736
+cap "M3/B" "M1/G1" 0.362176
+cap "M1/D14" "M3/D0" 0.149864
+cap "net1" "M3/S1" 0.0092502
+cap "M3/S1" "M3/B" 45.2467
+cap "net1" "M3/D0" 0.00142904
+cap "M1/G1" "M3/B" 19.8806
+cap "M3/D0" "M3/B" 64.2022
+cap "M1/G1" "M3/S1" 0.986474
+cap "M1/B" "M3/S1" 0.0145384
+cap "M3/S1" "M3/D0" 19.1023
+cap "M1/G1" "M3/D0" 6.21447
+cap "M1/B" "M3/D0" 0.0145384
+cap "M1/S15" "M3/S1" 0.450436
+cap "net2" "M3/D0" 0.0750758
+cap "VINP" "M3/D0" 1.31176
+cap "M1/G1" "M3/D0" 0.324395
+cap "net2" "M3/G0" 0.00403719
+cap "VINP" "M3/G0" 0.0241016
+cap "M3/D0" "M3/G0" 11.8475
+cap "M3/B" "net2" -0.0308982
+cap "M3/B" "VINP" 12.7786
+cap "M1/G1" "M3/G0" 0.0575057
+cap "M3/B" "M3/D0" 25.8474
+cap "M3/B" "M1/G1" -0.0416498
+cap "M1/B" "M3/D0" 0.0223048
+cap "M3/S1" "M3/D0" 0.654349
+cap "M3/B" "M3/G0" 18.3155
+cap "M1/D16" "M3/D0" 0.299728
+cap "M3/D0" "net1" -0.00946068
+cap "M3/S1" "M3/G0" 0.046246
+cap "M3/B" "M1/B" 0.166051
+cap "M3/B" "M3/S1" 11.4167
+cap "M3/G0" "net1" 0.00388864
+cap "M3/B" "net1" -0.0277516
+cap "M4/B" "M4/D0" 0.0172581
+cap "M4/D0" "net1" -0.00531609
+cap "M4/S1" "M2/G1" 0.629994
+cap "M4/D0" "M4/B" 71.5958
+cap "M4/G0" "net1" 0.019064
+cap "M4/D0" "M4/G0" 20.4559
+cap "M4/S1" "net1" -0.00531609
+cap "M4/D0" "M4/S1" 2.20347
+cap "M4/G0" "M4/B" 58.4576
+cap "M4/D0" "M2/G1" 1.27915
+cap "M4/G0" "M4/S1" 23.3805
+cap "M4/B" "M4/S1" 44.952
+cap "M4/G0" "M2/G1" 2.87974
+cap "M4/B" "M2/G1" 13.7406
+cap "M4/G0" "M2/B" 0.0483587
+cap "M4/D0" "M4/S1" 0.654349
+cap "net3" "M4/G0" 0.0104558
+cap "M4/D0" "net2" 0.0265425
+cap "VINN" "M4/B" 9.37689
+cap "M4/G0" "M4/B" 23.3905
+cap "M4/B" "M2/G1" -0.0600402
+cap "net1" "M4/B" -0.0217002
+cap "M4/G0" "net2" 0.0207263
+cap "M4/G0" "M4/S1" 0.0672458
+cap "net3" "M4/B" -0.130776
+cap "M4/B" "M4/S1" 11.8243
+cap "M4/D0" "net1" -0.00698686
+cap "M4/D0" "VINN" 0.720077
+cap "net2" "M4/B" -0.0425116
+cap "M4/D0" "M4/G0" 14.5668
+cap "M4/D0" "M2/G1" 0.0120873
+cap "net1" "M4/G0" 0.00575998
+cap "M4/G0" "VINN" 0.0278691
+cap "M4/G0" "M2/G1" 0.0126235
+cap "M4/D0" "net3" 0.00404681
+cap "M4/D0" "M4/B" 59.2111
+cap "CC/C1" "M6/B" 64.7726
+cap "CC/C1" "net1" 0.013476
+cap "CC/C2" "M6/B" 43.4459
+cap "CC/C2" "net1" 0.00635984
+cap "CC/C2" "CC/C1" 14.9675
+cap "CC/C2" "CC/C1" 12.8549
+cap "net1" "M6/B" -0.0160645
+cap "CC/C2" "net1" 0.00835864
+cap "CC/C2" "M6/B" 9.69179
+cap "CC/C1" "net1" 0.0372784
+cap "CC/C1" "M6/B" 101.54
+cap "M4/S1" "M4/G0" 0.543639
+cap "M4/D0" "M4/G0" 0.89008
+cap "M4/B" "M4/G0" 7.96751
+cap "M6/D0" "M6/G0" 0.368282
+cap "M6/D0" "M6/B" 12.2885
+cap "M6/G0" "M6/D0" 0.617961
+cap "M6/D0" "M6/D2" 0.413943
+cap "M6/D0" "M6/G1" 1.00281
+cap "M6/B" "M6/D0" 6.4439
+merge "M2/S29" "M2/S27" -4362.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76544 -6272 0 0 -89600 -6428 0 0 0 0 0 0
+merge "M2/S27" "M2/S25"
+merge "M2/S25" "M2/S23"
+merge "M2/S23" "M2/S21"
+merge "M2/S21" "M2/S19"
+merge "M2/S19" "M2/S17"
+merge "M2/S17" "M2/S15"
+merge "M2/S15" "M2/S13"
+merge "M2/S13" "M2/S11"
+merge "M2/S11" "M2/S9"
+merge "M2/S9" "M2/S7"
+merge "M2/S7" "M2/S5"
+merge "M2/S5" "M2/S3"
+merge "M2/S3" "M2/S1"
+merge "M2/S1" "M1/S29"
+merge "M1/S29" "M1/S27"
+merge "M1/S27" "M1/S25"
+merge "M1/S25" "M1/S23"
+merge "M1/S23" "M1/S21"
+merge "M1/S21" "M1/S19"
+merge "M1/S19" "M1/S17"
+merge "M1/S17" "M1/S15"
+merge "M1/S15" "M1/S13"
+merge "M1/S13" "M1/S11"
+merge "M1/S11" "M1/S9"
+merge "M1/S9" "M1/S7"
+merge "M1/S7" "M1/S5"
+merge "M1/S5" "M1/S3"
+merge "M1/S3" "M1/S1"
+merge "M1/S1" "M5/D2"
+merge "M5/D2" "M5/D0"
+merge "M5/D0" "net4"
+merge "M6/VSUBS" "M4/VSUBS" -2680.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14280 -1248 -7176 -588 0 0 -81424 -5672 -41512 -2890 0 0 0 0
+merge "M4/VSUBS" "M3/VSUBS"
+merge "M3/VSUBS" "CC/VSUBS"
+merge "CC/VSUBS" "M7/B"
+merge "M7/B" "M7/S1"
+merge "M7/S1" "M2/B"
+merge "M2/B" "M5/S1"
+merge "M5/S1" "M5/B"
+merge "M5/B" "R1/B"
+merge "R1/B" "M1/B"
+merge "M1/B" "M0/S1"
+merge "M0/S1" "VSUBS"
+merge "VSUBS" "M0/B"
+merge "M0/B" "VSS"
+merge "R1/R2" "M7/G0" -4263.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23392 -1844 -79968 -5440 -348952 -24432 0 0 0 0 0 0
+merge "M7/G0" "M7/G1"
+merge "M7/G1" "M5/G0"
+merge "M5/G0" "M5/G1"
+merge "M5/G1" "M0/G0"
+merge "M0/G0" "M0/D2"
+merge "M0/D2" "M0/D0"
+merge "M0/D0" "M0/G1"
+merge "M0/G1" "net1"
+merge "M6/G1" "M4/D2" -2124.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48392 -3944 0 0 0 0 -6748 -538 0 0 0 0
+merge "M4/D2" "M4/D0"
+merge "M4/D0" "M6/G0"
+merge "M6/G0" "CC/C1"
+merge "CC/C1" "M2/D30"
+merge "M2/D30" "M2/D28"
+merge "M2/D28" "M2/D26"
+merge "M2/D26" "M2/D24"
+merge "M2/D24" "M2/D22"
+merge "M2/D22" "M2/D20"
+merge "M2/D20" "M2/D18"
+merge "M2/D18" "M2/D16"
+merge "M2/D16" "M2/D14"
+merge "M2/D14" "M2/D12"
+merge "M2/D12" "M2/D10"
+merge "M2/D10" "M2/D8"
+merge "M2/D8" "M2/D6"
+merge "M2/D6" "M2/D4"
+merge "M2/D4" "M2/D2"
+merge "M2/D2" "M2/D0"
+merge "M2/D0" "net3"
+merge "M1/G29" "M1/G27" -2648.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80040 -6240 0 0 -85200 -4732 0 0 0 0 0 0
+merge "M1/G27" "M1/G25"
+merge "M1/G25" "M1/G23"
+merge "M1/G23" "M1/G21"
+merge "M1/G21" "M1/G19"
+merge "M1/G19" "M1/G17"
+merge "M1/G17" "M1/G15"
+merge "M1/G15" "M1/G13"
+merge "M1/G13" "M1/G11"
+merge "M1/G11" "M1/G9"
+merge "M1/G9" "M1/G7"
+merge "M1/G7" "M1/G5"
+merge "M1/G5" "M1/G3"
+merge "M1/G3" "M1/G1"
+merge "M1/G1" "M1/G28"
+merge "M1/G28" "M1/G26"
+merge "M1/G26" "M1/G24"
+merge "M1/G24" "M1/G22"
+merge "M1/G22" "M1/G20"
+merge "M1/G20" "M1/G18"
+merge "M1/G18" "M1/G16"
+merge "M1/G16" "M1/G14"
+merge "M1/G14" "M1/G12"
+merge "M1/G12" "M1/G10"
+merge "M1/G10" "M1/G8"
+merge "M1/G8" "M1/G6"
+merge "M1/G6" "M1/G4"
+merge "M1/G4" "M1/G2"
+merge "M1/G2" "M1/G0"
+merge "M1/G0" "VINP"
+merge "M4/G1" "M3/G1" -2450.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -53728 -4360 0 0 -50400 -3628 0 0 0 0 0 0
+merge "M3/G1" "M4/G0"
+merge "M4/G0" "M3/G0"
+merge "M3/G0" "M3/D2"
+merge "M3/D2" "M3/D0"
+merge "M3/D0" "M1/D30"
+merge "M1/D30" "M1/D28"
+merge "M1/D28" "M1/D26"
+merge "M1/D26" "M1/D24"
+merge "M1/D24" "M1/D22"
+merge "M1/D22" "M1/D20"
+merge "M1/D20" "M1/D18"
+merge "M1/D18" "M1/D16"
+merge "M1/D16" "M1/D14"
+merge "M1/D14" "M1/D12"
+merge "M1/D12" "M1/D10"
+merge "M1/D10" "M1/D8"
+merge "M1/D8" "M1/D6"
+merge "M1/D6" "M1/D4"
+merge "M1/D4" "M1/D2"
+merge "M1/D2" "M1/D0"
+merge "M1/D0" "net2"
+merge "M2/G29" "M2/G27" -2491 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80040 -6240 0 0 -74000 -3932 0 0 0 0 0 0
+merge "M2/G27" "M2/G25"
+merge "M2/G25" "M2/G23"
+merge "M2/G23" "M2/G21"
+merge "M2/G21" "M2/G19"
+merge "M2/G19" "M2/G17"
+merge "M2/G17" "M2/G15"
+merge "M2/G15" "M2/G13"
+merge "M2/G13" "M2/G11"
+merge "M2/G11" "M2/G9"
+merge "M2/G9" "M2/G7"
+merge "M2/G7" "M2/G5"
+merge "M2/G5" "M2/G3"
+merge "M2/G3" "M2/G1"
+merge "M2/G1" "M2/G28"
+merge "M2/G28" "M2/G26"
+merge "M2/G26" "M2/G24"
+merge "M2/G24" "M2/G22"
+merge "M2/G22" "M2/G20"
+merge "M2/G20" "M2/G18"
+merge "M2/G18" "M2/G16"
+merge "M2/G16" "M2/G14"
+merge "M2/G14" "M2/G12"
+merge "M2/G12" "M2/G10"
+merge "M2/G10" "M2/G8"
+merge "M2/G8" "M2/G6"
+merge "M2/G6" "M2/G4"
+merge "M2/G4" "M2/G2"
+merge "M2/G2" "M2/G0"
+merge "M2/G0" "VINN"
+merge "M6/D2" "M6/D0" -702.588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9568 -784 0 0 -5376 -296 -12056 -814 0 0 0 0
+merge "M6/D0" "CC/C2"
+merge "CC/C2" "M7/D2"
+merge "M7/D2" "M7/D0"
+merge "M7/D0" "VOUT"
+merge "M6/B" "M6/S1" -2027.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7140 -624 -9776 -792 -28308 -2030 -71804 -3738 0 0 0 0 0 0
+merge "M6/S1" "M4/S1"
+merge "M4/S1" "M4/B"
+merge "M4/B" "M3/S1"
+merge "M3/S1" "M3/B"
+merge "M3/B" "R1/R1"
+merge "R1/R1" "VDD"
