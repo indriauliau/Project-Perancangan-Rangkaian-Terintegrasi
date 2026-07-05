@@ -1,0 +1,27 @@
+** sch_path: /foss/designs/opamp.sch
+**.subckt opamp VDD VINN VINP VOUT VSS
+*.ipin VINN
+*.ipin VINP
+*.iopin VSS
+*.iopin VDD
+*.opin VOUT
+XM0 net2 net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XR1 net2 VDD VSS sky130_fd_pr__res_high_po_0p35 L=0.826 mult=1
+XM1 net3 VINP net4 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=150 nf=30 ad=21.75 as=23.2 pd=158.7 ps=169.28 nrd=0.00193333333333333
++ nrs=0.00193333333333333 sa=0 sb=0 sd=0 mult=1
+XM2 net1 VINN net4 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=150 nf=30 ad=21.75 as=23.2 pd=158.7 ps=169.28 nrd=0.00193333333333333
++ nrs=0.00193333333333333 sa=0 sb=0 sd=0 mult=1
+XM3 net3 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM4 net1 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM5 net4 net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM6 VOUT net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM7 VOUT net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XC1 net1 VOUT sky130_fd_pr__cap_mim_m3_1 W=2.8 L=2.8 MF=1
+**.ends
+.end

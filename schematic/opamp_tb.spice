@@ -1,0 +1,61 @@
+** sch_path: /foss/designs/opamp_tb.sch
+**.subckt opamp_tb
+x1 VDD 0 net1 VOUT VSS opamp
+V1 net1 0 dc 0 ac 1
+V2 VDD 0 1.8
+V3 VSS 0 -1.8
+C1 VOUT 0 8p
+**** begin user architecture code
+
+
+.lib /foss/pdks/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/combined/sky130.lib.spice tt
+.options temp=27
+.control
+save all
+ac dec 10 10 1G
+let gain = db(v(vout))
+let phase = phase(v(vout))*180/3.14159265
+meas ac dc_gain find gain at=10
+meas ac gbw_freq when gain=0
+meas ac phase_at_gbw find phase at=gbw_freq
+let phase_margin = 180 + phase_at_gbw
+print dc_gain
+print gbw_freq
+print phase_margin
+plot gain phase
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  opamp.sym # of pins=5
+** sym_path: /foss/designs/opamp.sym
+** sch_path: /foss/designs/opamp.sch
+.subckt opamp VDD VINN VINP VOUT VSS
+*.ipin VINN
+*.ipin VINP
+*.iopin VSS
+*.iopin VDD
+*.opin VOUT
+XM0 net2 net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XR1 net2 VDD VSS sky130_fd_pr__res_high_po_0p35 L=0.826 mult=1
+XM1 net3 VINP net4 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=150 nf=30 ad=21.75 as=23.2 pd=158.7 ps=169.28 nrd=0.00193333333333333
++ nrs=0.00193333333333333 sa=0 sb=0 sd=0 mult=1
+XM2 net1 VINN net4 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=150 nf=30 ad=21.75 as=23.2 pd=158.7 ps=169.28 nrd=0.00193333333333333
++ nrs=0.00193333333333333 sa=0 sb=0 sd=0 mult=1
+XM3 net3 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM4 net1 net3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM5 net4 net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM6 VOUT net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM7 VOUT net2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.18 W=4 nf=2 ad=0.58 as=1.16 pd=4.58 ps=9.16 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XC1 net1 VOUT sky130_fd_pr__cap_mim_m3_1 W=2.8 L=2.8 MF=1
+.ends
+
+.end
